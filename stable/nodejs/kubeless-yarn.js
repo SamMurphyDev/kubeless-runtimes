@@ -50,7 +50,7 @@ const context = {
 };
 
 const script = new vm.Script(
-  "\nrequire('kubeless')(require('" + modPath + "'));\n",
+  `\nrequire('kubeless')(require('${modPath}'));\n`,
   {
     filename: modPath,
     displayErrors: true,

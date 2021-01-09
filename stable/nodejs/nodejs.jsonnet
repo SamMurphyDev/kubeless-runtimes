@@ -43,6 +43,26 @@
         },
        }],
      },
+     { name: 'node12yarn',
+       version: '112',
+       images: [{
+        phase: "runtime",
+        image: "sammurphydev/nodejs@sha256:d612b652c5da025512271ca13871ea29264b583d87c0a6d1a609b00c8da37fff",
+        env: {
+          NODE_PATH: "$(KUBELESS_INSTALL_VOLUME)/node_modules",
+        },
+       }],
+     },
+     { name: 'node14yarn',
+       version: '114',
+       images: [{
+        phase: "runtime",
+        image: "sammurphydev/nodejs@sha256:d0c088a0e259d79371d70eb448d9a32ac1cdbcf6b736d8f380c6e8605aa08c8c",
+        env: {
+          NODE_PATH: "$(KUBELESS_INSTALL_VOLUME)/node_modules",
+        },
+       }],
+     },
     ],
   depName: 'package.json',
   fileNameSuffix: '.js'
